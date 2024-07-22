@@ -6,9 +6,19 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container"> 
+        <h1 id="answer"></h1>
+    </id>
+   
     <script>
     let today = new Date().getDay();
-    console.log(today);
+    const h1 = document.querySelector("#answer");
+    if(today === 5){
+        h1.textContent = 'YES!';
+    }
+    else{
+        h1.textContent = "No :(";
+    }
     </script>
 </body>
 </html>
